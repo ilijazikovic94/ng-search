@@ -1,0 +1,21 @@
+.content-container{
+    width: 85vw;
+    margin-left: auto;
+    margin-right: auto;
+    color: #c1d1e8;
+
+    .content-list{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        padding-left: 2rem;
+
+        @media screen and (max-width: 667px) {
+            padding-left: 0rem;
+        }
+
+        @media screen and (max-width: 820px) {
+            padding-left: 0rem;
+        }
+    }
+}

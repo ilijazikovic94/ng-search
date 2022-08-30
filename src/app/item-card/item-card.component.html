@@ -1,0 +1,13 @@
+<div class="item-container">
+    <div class="item-image-container"></div>
+    <div class="item-content-container">
+        <div class="item-main-content">
+            <h2>{{ data.name }}</h2>
+            <p>Release Date: {{ convertDateFormat() }}</p>
+            <p>[Summary] {{ data.summary }}</p>
+        </div>
+        <div class="item-score-container">
+            <div class="score-value">{{ data.rating?.toFixed(1) }}</div>
+        </div>
+    </div>
+</div>

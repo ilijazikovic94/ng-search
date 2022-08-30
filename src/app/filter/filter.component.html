@@ -1,0 +1,37 @@
+<div class="card">
+    <h2>Filter Results</h2>
+    <div class="form-container">
+        <div class="row">
+            <div class="form-group">
+                <label for="name">Name(contains)</label>
+                <input type="text" class="form-control" id="name" placeholder="Text String" (input)="changeKeyword($event)" />
+            </div>
+        </div>
+        <div class="filter-row">
+            <div class="row">
+                <div class="form-group">
+                    <label for="score">Minimum Score</label>
+                    <input type="text" class="form-control" id="score" placeholder="1 - 10" (input)="changeScore($event)" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <label for="order_by">Order By</label>
+                    <div class="form-row">
+                        <button class="btn btn-primary" (click)="changeOrderDirection()">
+                            <img src="../../assets/up-arrow-icon.svg" [ngClass]="status ? '' : 'rotate-animation'" />
+                        </button>
+                        <select id="order_by" class="form-control" (change)="changeOrder($event)">
+                            <option value="first_release_date">Release Date</option>
+                            <option value="rating">Score</option>
+                            <option value="name">Name</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-end">
+                <button class="btn btn-primary">Clear</button>
+            </div>
+        </div>
+    </div>
+</div>

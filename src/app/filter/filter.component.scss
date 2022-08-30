@@ -1,0 +1,31 @@
+.card{
+    background-color: #0E192B;
+    padding: 2rem;
+
+    h2{
+        margin-top: 0px;
+    }
+
+    .rotate-animation{
+        transform: rotate(180deg);
+    }
+
+    
+    .filter-row{
+        display: flex;
+        flex-direction: column;
+
+        @media screen and (max-width: 820px) and (min-width: 668px) {
+            flex-direction: row;
+            gap: 15px;
+
+            .justify-end{
+                margin-bottom: 11px;
+
+                button{
+                    padding: 11px 1rem
+                }
+            }
+        }
+    }
+}
